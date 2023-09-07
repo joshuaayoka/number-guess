@@ -1,0 +1,59 @@
+html,
+body {
+    background-color: rgb(119, 128, 169);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', serif;
+}
+
+main {
+    background-color: rgb(44, 67, 170);
+    border-radius: 8px;
+    text-align: center;
+    margin: 50% auto;
+    padding: 20px 40px;
+    box-shadow: 2px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+input {
+    border: 0;
+    border-radius: 3px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input:hover,
+input:focus:hover {
+    outline: solid aqua 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#action-button {
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(35, 131, 215);
+    color: white;
+    font-family: 'Roboto', serif;
+    padding: 15px;
+}
+
+#action-button:hover {
+    transform: scale(1.03);
+    background-color: rgb(24, 86, 141);
+}
+
+#action-button:active {
+    transform: scale(0.95);
+}
