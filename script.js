@@ -42,10 +42,10 @@ class GuessingGame {
                     " is the correct answer!";
                 this.gameOver(true);
             }
-    
+
             this.lives--;
             this.updateLivesContainer();
-    
+
             if (this.lives <= 0) {
                 this.statusMessage.textContent = "You ran out of lives";
                 this.gameOver(false);
@@ -68,8 +68,8 @@ class GuessingGame {
 
     reset() {
         this.statusMessage.textContent = "Take a guess";
-        this.inputContainer.removeAttribute("readonly");
         this.actionButton.textContent = "Enter";
+        this.inputContainer.removeAttribute("readonly");
         this.number = this.generateNumber();
         this.lives = 7;
         this.updateLivesContainer();
