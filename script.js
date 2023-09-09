@@ -28,7 +28,6 @@ class GuessingGame {
     }
 
     checkGuess() {
-        console.log(this.number);
         let input = this.inputContainer.value;
         if (input != "") {
             this.inputContainer.value = "";
@@ -39,7 +38,6 @@ class GuessingGame {
                 this.statusMessage.textContent = input + " is too low";
             }
             else {
-                console.log("here")
                 this.statusMessage.textContent = "You win! " + input +
                     " is the correct answer!";
                 this.gameOver(true);
